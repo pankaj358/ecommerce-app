@@ -1,0 +1,288 @@
+{
+	"info": {
+		"_postman_id": "aff6e551-1710-4a63-9ec7-84c91a89923c",
+		"name": "ecommerce-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}/user/8df389fd-43c8-479f-a0bb-d6b3572e6ad5",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"user",
+						"8df389fd-43c8-479f-a0bb-d6b3572e6ad5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Jerry\",\n    \"lastName\": \"White\",\n    \"phoneNumber\": \"9090901200\",\n    \"email\": \"jerry-the-buyer@mail.com\",\n    \"country\": \"IND\",\n    \"userType\": \"Buyer\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base-url}}/user",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-get-All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}/user/",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productName\": \"Iphone8\",\n    \"available\": true,\n    \"productPrice\": \"40000\",\n    \"sellerId\": \"ca501309-1695-45f4-958a-6700e645b7c6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base-url}}/product",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product-getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}/product",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product-get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}/product/5c1f9e6a-4f54-4834-aea2-096c3c9d74de",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"product",
+						"5c1f9e6a-4f54-4834-aea2-096c3c9d74de"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order-getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}/order",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shopping-cart-getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}/shopping-cart",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"shopping-cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order-get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}/order/1e35dc04-6b8c-11eb-9439-0242ac130002",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"order",
+						"1e35dc04-6b8c-11eb-9439-0242ac130002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shopping-cart-create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\" : \"789fd802-84c2-461b-b273-24d6cc7cab34\",\n    \"itemList\": [\n        {\n            \"productId\": \"0f66a5d6-1b44-4f8a-962b-cd27f4218236\",\n            \"quantity\": 1\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base-url}}/shopping-cart",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"shopping-cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shopping-cart-get-all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}/shopping-cart",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"shopping-cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shopping-cart-get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}/shopping-cart/f475b9e9-9d25-4662-81b9-25161e5dfd20",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"shopping-cart",
+						"f475b9e9-9d25-4662-81b9-25161e5dfd20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order-get-all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-url}}/order",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order-created",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"789fd802-84c2-461b-b273-24d6cc7cab34\",\n    \"shoppingCartId\": \"5e384cd7-9d86-4949-be8d-9929f2fa1ee4\",\n    \"paymentDetails\" : {\n        \"methodType\" : \"debit-card\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base-url}}/order",
+					"host": [
+						"{{base-url}}"
+					],
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
